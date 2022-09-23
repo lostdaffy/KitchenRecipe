@@ -1,0 +1,79 @@
+<main class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="pt-5">
+                    <h5 class="inner__sub">Our Recipes</h5>
+                    <h2 class="inner__head">It is now easier to get <span class="inner__clr">attractive services.</span></h2>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="pt-0">
+                    <img src="../../../assets/images/sandwich.png" class="w-75 pull-right" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <i class="fa fa-arrow-down fa-3x"></i>
+        </div>
+
+        <!-- cards -->
+
+        <div class="my-lg-5 ">
+            <div class="container  py-5">
+                <div class="col-md-12 shadow-lg mb-4 pt-5" *ngFor="let res of recipe">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="image">
+                                <img src="{{imgUrl+res.file}}" class="" alt="{{res.file}}" />
+                            </div>
+                            <div class="card-head text-center mt-3">
+                                <h1>{{res.recipeTitle}}</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="container pt-4">
+
+                                <div class="container__text__timing">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="container__text__timing_time">
+                                                <h2>Total Time</h2>
+                                                <p>{{res.onTime}} min</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="container__text__timing_time">
+                                                <h2>Preparation Time</h2>
+                                                <p>{{res.totalTime}} min</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="container__text__timing_time">
+                                                <h2>Cooking Time</h2>
+                                                <p>{{res.Yield}} min</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <button class="card-btn my-2">View Recipe</button> -->
+                                <div class="all__recipe">
+                                    <div class="content">
+                                        <div id="method" class="tabcontent">
+                                            <hr>
+                                            <ol>
+                                                <p>{{res.cookingTutorial}}</p>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>

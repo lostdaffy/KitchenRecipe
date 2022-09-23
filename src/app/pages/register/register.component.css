@@ -1,0 +1,114 @@
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: 100%;
+    width: 73%;
+    margin: auto;
+}
+
+.loginform h3 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.button {
+    border: none;
+    padding: 15px 70px;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    border: 2px solid #85B72C;
+    color: #85B72C;
+    background: transparent;
+    font-weight: bold;
+}
+
+.button:hover {
+    -webkit-box-shadow: 4px 3px 24px #85B72C;
+    box-shadow: 4px 3px 24px #85B72C;
+}
+
+.top_link img {
+    width: 28px;
+    padding-right: 7px;
+    margin-top: -3px;
+}
+
+.group {
+    position: relative;
+    margin: 35px 0;
+}
+
+.group input {
+    background: none;
+    color: #777;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 320px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #c6c6c6;
+}
+
+.group input:focus,
+.group textarea:focus {
+    outline: none;
+}
+
+.group input:focus~label,
+.group input:valid~label,
+.group textarea:focus~label,
+.group textarea:valid~label {
+    top: -14px;
+    font-size: 12px;
+    color: #85B72C;
+}
+
+.group input:focus~.bar:before,
+.group textarea:focus~.bar:before {
+    width: 320px;
+}
+
+.group input[type=password] {
+    letter-spacing: 0.3em;
+}
+
+label {
+    color: #777;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 300ms ease all;
+}
+
+
+/*  */
+
+.social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    padding-top: -4px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #85B72C;
+    transition: all 0.5s ease;
+    border: 2PX solid #85B72C;
+}
+
+.social-links a:hover {
+    color: #fff;
+    background-color: #85B72C;
+}
+

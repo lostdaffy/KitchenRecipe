@@ -1,0 +1,99 @@
+<section>
+    <div class="container my-lg-5 py-5">
+        <h1>Welcome Admin </h1>
+        <h1>You can Add New Recipes</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="cta d-flex">
+            <div class="">
+                <a data-bs-toggle="modal" data-bs-target="#exampleModal_2" class="btn btn-success"><span>Add New Recipe</span></a>
+            </div>
+            <div class="mx-5">
+                <a type="submit" (click)="userService.logOut()" class="btn btn-danger">LogOut</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Model add recipe -->
+<div class="modal fade" id="exampleModal_2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" #closebutton></button>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-12">
+                    <div class="text-center py-3">
+                        <h1>Public New Recipe</h1>
+                    </div>
+                    <div class="container">
+                        <form class="row g-3">
+                            <div class="col-md-12">
+                                <input (change)="getTitle(recipeTitle.value)" type="text" class="form-control" placeholder="Title of Recipe" aria-label="First name" #recipeTitle>
+                            </div>
+                            <div class="col-12">
+                                <textarea (change)="getTutorial(cookingTutorial.value)" class="form-control" placeholder="Cooking Tutorial" rows="7" #cookingTutorial></textarea>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputZip" class="form-label">Preparation Time</label>
+                                <input (change)="getTime(onTime.value)" type="time" class="form-control" #onTime>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputZip" class="form-label">Total Time</label>
+                                <input (change)="getTotalTime(totalTime.value)" type="time" class="form-control" #totalTime>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputZip" class="form-label">Cooking Time</label>
+                                <input (change)="getYield(yield.value)" type="time" class="form-control" #yield>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="file" id="formFile" (change)="getFile($event)">
+                            </div>
+
+                            <div class="col-12 text-center my-5">
+                                <a (click)="createRecipe()" type="submit" class="btn btn-primary w-100">Public</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Model add recipe -->
+
+<section>
+    <div class="container">
+        <div class="row">
+            <main role="main" class="container">
+                <div class="projects mb-4">
+                    <div class="projects-inner">
+                        <header class="projects-header">
+                            <div class="title">Ongoing Recipes</div>
+                            <div class="count">| 32 Recipes</div>
+                            <i class="zmdi zmdi-download"></i>
+                        </header>
+                        <table class="projects-table">
+                            <thead>
+                                <tr class="indx">
+                                    <th>Id</th>
+                                    <th>Recipe Name</th>
+                                    <th>Date & Time</th>
+                                    <th>Image</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tr *ngFor="let res of recipe">
+                                <td>{{res._id}}</td>
+                                <td>{{res.recipeTitle}}</td>
+                                <td>{{res.date}}</td>
+                                <td class="member"><img src="{{imgUrl+res.file}}" /></td>
+                                <td><a (click)="deleteRecipe(res._id)"><i class="fa fa-trash text-danger" ></i></a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</section>

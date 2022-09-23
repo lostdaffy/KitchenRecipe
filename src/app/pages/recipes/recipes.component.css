@@ -1,0 +1,178 @@
+.inner__sub {
+    font-size: 40px;
+    color: #777;
+    margin-bottom: 1em;
+}
+
+.inner__head {
+    font-size: 65px;
+}
+
+.inner__clr {
+    color: #85B72C;
+}
+
+
+/* cards */
+
+.image img {
+    width: 85%;
+    height: 40vh;
+}
+
+.image {
+    padding-left: 3.5rem;
+}
+
+.card-head h1 {
+    color: #85B72C;
+}
+
+.card-img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px 0 0 5px;
+}
+
+.card-btn {
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    background-color: #85B72C;
+    color: #fff;
+    padding: 12px 40px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.294);
+}
+
+.container__text {
+    padding: 40px 40px 0;
+}
+
+.container__text h1 {
+    color: #351897;
+    font-weight: 400;
+}
+
+.container__text .container__text__star span {
+    font-size: 0.8rem;
+    color: #ffa800;
+    margin: -5px 0 20px;
+}
+
+.container__text p {
+    font-size: 0.9rem;
+}
+
+.container__text .container__text__timing {
+    display: flex;
+    margin: 20px 0 10px;
+}
+
+.container__text__timing_time p {
+    color: #85B72C;
+    font-size: 20px;
+}
+
+.container__text__timing_time h2 {
+    color: #777;
+    font-size: 25px;
+}
+
+.container__text .container__text__timing h2 {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #818189;
+}
+
+.container__text .container__text__timing p {
+    color: #351897;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+/* testing */
+
+.all__recipe {
+    margin: auto;
+    display: flex;
+    height: 250px;
+    justify-content: center;
+}
+
+.content {
+    background-color: #fff;
+}
+
+.tabcontent {
+    height: 80%;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+.tabcontent h2 {
+    margin-left: 5%;
+    margin-bottom: 0;
+    font-family: "Roboto";
+    color: #636363;
+}
+
+.tabcontent p {
+    color: #636363;
+}
+
+.tabcontent ol {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    list-style-type: decimal;
+}
+
+#method ol {
+    overflow-y: scroll;
+    height: 75%;
+}
+
+#method ol::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+
+#method ol::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+#method ol::-webkit-scrollbar-thumb {
+    background-color: #949596;
+}
+
+.credits {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    color: #686868;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

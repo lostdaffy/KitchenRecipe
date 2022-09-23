@@ -1,0 +1,46 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid mx-sm-5 px-sm-5">
+        <a class="navbar-brand" routerLink="">
+            <span style="color: #85b72c; font-weight:700; font-size: 30px;">KitchenRecipe</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="" routerLinkActive=""><strong>Home</strong></a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>Category</strong>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" routerLink=""><i class="fa fa-circle-o"></i> Bread</a></li>
+                        <li><a class="dropdown-item" routerLink=""><i class="fa fa-circle-o"></i> Lunch</a></li>
+                        <li><a class="dropdown-item" routerLink=""><i class="fa fa-circle-o"></i> Dinner</a></li>
+                        <li><a class="dropdown-item" routerLink=""><i class="fa fa-circle-o"></i> Pasta</a></li>
+                        <li><a class="dropdown-item" routerLink=""><i class="fa fa-circle-o"></i> Quick Food</a></li>
+                    </ul>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/All-Recipes" routerLinkActive=""><strong>Recipes</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/about" routerLinkActive=""><strong>About us</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/contact" routerLinkActive=""><strong>Contact us</strong></a>
+                </li>
+            </ul>
+            <div class="d-flex options">
+                <!-- <div class="mx-4">
+                    <a routerLink=""><i class="fa fa-heart-o fa-2x"></i></a>
+                </div> -->
+                <div>
+                    <a routerLink="/login"><i class="fa fa-user-o fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,434 @@
+.spin {
+    animation-name: spin;
+    animation-duration: 50000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.hero-text h1 {
+    font-size: 4rem;
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 1.875rem;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    background-color: #85B72C;
+    border: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 13px 30px;
+    padding-top: 13px;
+    padding-right: 30px;
+    padding-bottom: 13px;
+    padding-left: 30px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    border-radius: 8px;
+}
+
+.button:hover {
+    -webkit-box-shadow: 4px 3px 24px #85B72C;
+    box-shadow: 4px 3px 24px #85B72C;
+}
+
+
+.carousel-control-next,
+.carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+
+/* about */
+
+.about small {
+    color: #85B72C;
+}
+
+.about h1 span {
+    color: #85B72C;
+}
+
+
+/* /about */
+
+
+/* category cards */
+
+
+/* Image Card */
+
+.profile-card-5 {
+    margin-top: 20px;
+}
+
+.profile-card-5 .btn {
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 7px 20px;
+}
+
+.profile-card-5 .card-img-block {
+    width: 91%;
+    margin: 0 auto;
+    position: relative;
+    top: -20px;
+}
+
+.profile-card-5 .card-img-block img {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+}
+
+.profile-card-5 h5 {
+    color: #85B72C;
+    font-weight: 600;
+}
+
+.category i {
+    color: #85B72C;
+}
+
+
+/* /category cards */
+
+
+/* subscribe */
+
+.ct-newsletter-section {
+    background-image: url(https://androthemes.com/themes/wp/cookiteer/wp-content/themes/cookiteer/assets/img/bg/1.jpg);
+}
+
+.section {
+    position: relative;
+    padding: 80px 0;
+}
+
+.bg-cover {
+    background-size: cover;
+}
+
+.section-title-wrap.section-header {
+    margin-bottom: 50px;
+}
+
+.newstitle {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.section-title-wrap.section-header.text-center p {
+    margin: 0 auto;
+}
+
+.section-title-wrap p,
+.section-title-wrap .subtitle {
+    max-width: 600px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: inherit;
+}
+
+.newsletter-fields {
+    max-width: 500px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.ct-newsletter-section .mc4wp-form-fields .form-control {
+    flex: 1;
+}
+
+input {
+    height: 50px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: 1px solid #efefef;
+    width: 100%;
+    color: #6e6e6e;
+    border-color: #e5e1dc;
+    background-color: #fff;
+    letter-spacing: .1px;
+    font-size: 14px;
+    outline: none;
+}
+
+
+/* /subscribe */
+
+
+/* tranding recipe */
+
+.recipe-card .header .edit {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 13%;
+    left: 10%;
+    border-radius: 50%;
+    background: #85B72C;
+    border: 0;
+    color: #FFF;
+    font-size: 1.5rem;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.recipe-card .header .edit:hover {
+    background: #85B72C;
+}
+
+.recipe-card .header .edit:focus {
+    outline: 0;
+}
+
+.recipe-card .header .delete {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    border-radius: 0%;
+    background: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.recipe-card .header .delete:focus {
+    outline: 0;
+}
+
+.recipe-card .body {
+    padding: 15px 15px 25px 15px;
+}
+
+.recipe-card .body .title {
+    background: transparent;
+    border-bottom: 1px solid #85B72C;
+    color: #85B72C;
+    display: block;
+    margin: 0;
+    margin-bottom: 5px;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 0 0 5px 0;
+    text-decoration: none;
+}
+
+.recipe-card .body h3 {
+    color: #85B72C;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    margin: 0;
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding: 0;
+    text-align: right;
+}
+
+.recipe-card .body ul.ingredients {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.recipe-card .body ul.ingredients li {
+    color: #7f8c8d;
+    font-size: 1rem;
+    font-family: "Raleway", sans-serif;
+}
+
+.recipe-card .body ul.ingredients li .fa {
+    color: #85B72C;
+    margin-right: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+
+
+/* tranding recipe */
+
+
+/* testing */
+
+.our-team {
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+
+.our-team:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+}
+
+.our-team:hover:before {
+    opacity: 1;
+}
+
+.our-team img {
+    width: 100%;
+    height: auto;
+}
+
+.our-team .team-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 0;
+    background-color: #84b72ca7;
+    transition: all 0.3s ease 0s;
+}
+
+.our-team:hover .team-content {
+    bottom: 20%;
+}
+
+.our-team .team-content .name {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+
+.our-team:hover .team-content .name {
+    transform: translateY(30px);
+    transition-delay: 0.3s;
+}
+
+.our-team .team-content .post {
+    font-size: 17px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    text-transform: capitalize;
+}
+
+.our-team:hover .team-content .post {
+    transform: translateY(-30px);
+    transition-delay: 0.3s;
+}
+
+@media screen and (max-width: 990px) {
+    .our-team {
+        margin-bottom: 30px !important;
+    }
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 456px) {
+    .hero-text h1 {
+        font-size: 0.5rem ;
+
+    }
+}
+@media only screen and (max-width: 553px) {
+    .hero-text a.button{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .hero-text p {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .hero-text h1 {
+        font-size: 2rem !important;
+
+    }
+    .hero-text p {
+        font-size: 16px;
+
+    }
+    .about{
+        margin-top: 1rem;
+    }
+    .dnone{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .hero-text h1 {
+        font-size: 3rem;
+
+    }
+}
+
+
+@media only screen and (max-width: 1400px) {
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 10%;
+    }
+}

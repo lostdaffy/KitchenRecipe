@@ -1,0 +1,62 @@
+<section>
+    <div class="container my-lg-5">
+        <div class="contact">
+            <form [formGroup]="registerForm" method="post">
+                <div class="loginform">
+                    <h3>Register Here</h3>
+
+                    <div class="group">
+                        <input type="text" name="userName" formControlName="userName" required="required" /><span
+                            class="highlight"></span><span class="bar"></span>
+                        <label>Name</label>
+                        <div *ngIf="userName?.errors?.['required'] && userName?.touched" class="text-danger">
+                            required*
+                        </div>
+                    </div>
+                    <div class="group">
+                        <input type="email" name="email" formControlName="email" required="required" /><span
+                            class="highlight"></span><span class="bar"></span>
+                        <label>Email</label>
+                        <div *ngIf="email?.errors?.['required'] && email?.touched" class="text-danger">
+                            required*
+                        </div>
+                        <div *ngIf=" email?.errors?.['email'] && email?.touched" class="text-danger">
+                            Invalid Email*
+                        </div>
+                    </div>
+                    <div class="group">
+                        <input type="password" name="password" formControlName="password" required="required" /><span
+                            class="highlight"></span><span class="bar"></span>
+                        <label>Password</label>
+                        <div *ngIf=" password?.errors?.['required'] && password?.touched" class="text-danger">
+                            required*
+                        </div>
+                        <div *ngIf="password?.errors?.['password'] && password?.touched" class="text-danger">
+                            Invalid Password*
+                        </div>
+                    </div>
+                    <div class="group">
+                        <input type="password" name="cpassword" formControlName="cpassword" required="required" /><span
+                            class="highlight"></span><span class="bar"></span>
+                        <label>Confirm Password</label>
+
+                        <div *ngIf="passwordMatchError" class="text-danger">
+                            Password does not match
+                        </div>
+                    </div>
+                    <!-- <div>
+                        <div class="social-links text-center">
+                            <a routerLink=""><i class="fa fa-google-plus"></i></a>
+                            <a routerLink=""><i class="fa fa-facebook-f"></i></a>
+                        </div>
+                    </div> -->
+                    <button class="button" type="submit" (click)="register()">Register <i
+                            class="fa fa-arrow-right"></i></button>
+                    <div class="mt-3 text-center">
+                        <p>Already have an account ? <a routerLink="/login">Sign in</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
